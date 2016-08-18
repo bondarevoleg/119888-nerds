@@ -3,6 +3,9 @@ body {
   font-family: "Roboto";
   font-weight: normal;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 h1 {
   font-size: 40px;
@@ -13,5 +16,38 @@ h2{
   line-height: 1em;
 }
 
+.main-header {
+  background-color: #eeeeee;
+ 
+}
 
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+  
+}
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+    
+  
+}
+
+.logo-header {
+  float: left;
+  width: 140px;
+  height: 60px;
+  margin-right: 180px;
+}
+
+.main-navigation {
+  float: left;
+  width: 400px;
+}
+
+.main-navigation li {
+  display: inline-block;
+}
