@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Внутренняя страница Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="main-header inner-header">
-        <div class="container">
+        <div class="container clearfix">
+         <div class="float-wrap">
           <div class="logo-header">
             <a href="index.html">
               <img src="img/logo.png" alt="Нёрдс">
@@ -32,53 +34,75 @@
       <div class="user-block">
         <a class="login" href="#">Корзина</a>
       </div>
+          </div>
       <h1 class="title-header">
         ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН
-        ГОТОВЫХ МАКЕТОВ
+             ГОТОВЫХ МАКЕТОВ
       </h1>
         </div>
     </header>
     <main>
-      <div class="container">
+        <div class="container clearfix">
+         <div class="wrap-form">
+      
         <form class="main-form" action="" method="">
         <div class="filter"></div>
         <div class="grid">
           <h3 class="radio-title">
             СЕТКА:
           </h3>
+          <div>
           <input type="radio" name="grid" value="adaptive-grid" id="grid-1" checked>
           <label for="grid-1">Адаптивная</label>
+          </div>
+          <div>
           <input type="radio" name="grid" value="fixed-grid" id="grid-2">
           <label for="grid-2">Фиксированная</label>
+          </div>
+          <div>
           <input type="radio" name="grid" value="rubber-grid" id="grid-3">
           <label for="grid-3">Резиновая</label>
+          </div>
         </div>
         <div class="checkbox">
           <h3 class="checkbox-title">
             ОСОБЕННОСТИ:
           </h3>
+          <div>
           <input type="checkbox" name="slider" id="checkbox-1" checked>
           <label for="checkbox-1">Слайдер</label>
+          </div>
+          <div>
           <input type="checkbox" name="block-features" id="checkbox-2">
           <label for="checkbox-2">Блок преимуществ</label>
+          </div>
+          <div>
           <input type="checkbox" name="news" id="checkbox-3" checked>
           <label for="checkbox-3">Новости</label>
+          </div>
+          <div>
           <input type="checkbox" name="gallery" id="checkbox-4">
           <label for="checkbox-4">Галерея</label>
+          </div>
+          <div>
           <input type="checkbox" name="cart" id="checkbox-5">
           <label for="checkbox-5">Корзина</label>
+          </div>
         </div>
         <button type="submit">показать</button>
         </form>
+        
+      </div>
+        <div class="wrap-layouts">
         <div class="nav-type">
-          <span class="title">
+          <div class="title">
             сортировать:
-          </span>
-          <a href="">по цене</a>
-          <a href="">по типу</a>
-          <a href="">по функционалу</a>
-          <a href="">&#9660</a>
-          <a href="">&#9650</a>
+          </div>
+          <a class="link" href="">по цене</a>
+          <a class="link" href="">по типу</a>
+          <a class="link-functional" href="">по функционалу</a>
+          <a class="link-pointer-down" href="">&#9660</a>
+          <a class="link-pointer-up" href="">&#9650</a>
         </div>
         <div class="block-layouts">
           <ul class="block-list">
@@ -114,8 +138,14 @@
           <a class="next" href="">3</a>
           <a class="following" href="">следущая</a>
         </div>
-        <section class="location">
-      <div class="container">
+        </div>
+      
+      </div>
+  </main>
+      
+       
+        <section class="location clearfix">
+      <div class="container clearfix">
         <div class="block-address">
           <h3 class="block-address-title">
             NERDS DESIGN STUDIO
@@ -132,10 +162,10 @@
         </div>
         </div>
        </section>
-      </div>
-    </main>
+      
+    
     <footer class="main-footer">
-    <div class="container">
+    <div class="container clearfix">
       <div class="social">
         <ul class="social-list">
           <li class="social-item">
