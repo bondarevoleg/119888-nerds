@@ -141,7 +141,7 @@ h2{
 }
 
 .location {
-  background: url(/img/map.jpg) no-repeat;
+  background: url(../img/map.jpg) no-repeat;
   height: 420px;
 }
 
