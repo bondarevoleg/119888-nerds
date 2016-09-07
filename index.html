@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   
@@ -18,13 +18,13 @@
       <nav class="main-navigation">
         <ul>
           <li>
-            <a  class="link" href="#">Студия</a>
+            <a  class="link link-active" href="#">Студия</a>
           </li>
           <li>
             <a  class="link" href="#">Клиенты</a>
           </li>
           <li>
-            <a  class="link" href="#">Магазин</a>
+            <a  class="link" href="inner.html">Магазин</a>
           </li>
           <li>
             <a  class="link" href="#">Контакты</a>
@@ -36,52 +36,75 @@
       </div>
       </div>
       <div class="slider">
-        <h2 class="slider-title">
-          Долго, дорого,<br>
-          скрупулезно.
-        </h2>
-        <p class="slider-text">
-          Математически выверенный дизайн
-          для вашего сайта или мобильного приложения.
-        </p>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики,<br> только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
   <main>
-    <div class="container clearfix">
-      <section class="features">
+    <div class="container">
+      <section class="features clearfix">
       <div class="features-item">
        <div class="features-images">
-         <img src="img/features-1.jpg" alt="">
+         <img src="img/features-1.jpg" alt="" width="240" height="124">
        </div>
         <div class="features-name">ВЕБ-САЙТЫ</div>
         <p class="features-text">
           Мир никогда не будет прежним
           после того как увидит ваш сайт!
         </p>
-        <a class="features-link" href="#">заказать</a>
+        <a class="features-link btn-1" href="#">заказать</a>
       </div>
       <div class="features-item">
         <div class="features-images">
-         <img src="img/features-2.jpg" alt="">
+         <img src="img/features-2.jpg" alt="" width="240" height="124">
        </div>
         <div class="features-name">ПРИЛОЖЕНИЯ</div>
         <p class="features-text">
           Покорите топ-10 приложений
           в AppStrore и Google Play
         </p>
-        <a class="features-link" href="#">заказать</a>
+        <a class="features-link btn-2" href="#">заказать</a>
       </div>
       <div class="features-item">
         <div class="features-images">
-         <img src="img/features-3.jpg" alt="">
+         <img src="img/features-3.jpg" alt="" width="240" height="124">
        </div>
         <div class="features-name">ПРЕЗЕНТАЦИИ</div>
         <p class="features-text">
           Вы даже не подозреваете,
           насколько вы изумительны!
         </p>
-        <a class="features-link" href="#">заказать</a>
+        <a class="features-link btn-3" href="#">заказать</a>
       </div>
       </section>
       <section class="about clearfix">
@@ -169,7 +192,7 @@
       </main>
   <footer class="main-footer">
     <div class="container clearfix">
-      <div class="social">
+      <div class="social sprite">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
